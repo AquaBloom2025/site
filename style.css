@@ -7,6 +7,13 @@
 
 @font-face {
   font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-35-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
   src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-45-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
@@ -54,7 +61,20 @@
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: "YanShiXiaXingKai";
+  src: url("../assets/fonts/YanShiXiaXingKai.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FangzhengShuSong";
+  src: url("../assets/fonts/FangzhengShuSong_zh-cn.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @media (max-width: 768px) {
   .hero {
@@ -66,7 +86,6 @@
     text-align: center;
   }
 }
-
 
 body {
   background-color: #0f1113;
@@ -196,7 +215,7 @@ body {
 }
 
 .hero {
-  height: min(110vh, 6000px);
+  height: min(100vh, 6000px);
   background: url('assets/hero/hero-road-texture.png') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -226,16 +245,16 @@ body {
   text-align: right;
 }
 
-.subtitle.lang-en em {
+.subtitle.lang-en *{
   font: italic;
   font-size: 30px;
   line-height: 32px;
   font-family: "Times New Roman";
 }
-.subtitle.lang-cn em {
-  font: italic;
+.subtitle.lang-cn *{
+  font-weight: 400;
   font-size: 45px;
-  font-family: '宋体';
+  font-family: "楷体";
 }
 
 .hero-metrics span {
@@ -262,34 +281,32 @@ body {
 .section p.lang-en,
 .section ul.lang-en *,
 .section li.lang-en *{
-  font-size: 26px;
+  font-size: 25px;
   font-family: 'Times New Roman';
 }
 
 .section p.lang-cn,
 .section ul.lang-cn *,
 .section li.lang-cn *{
-  font-size: 26px;
-  font-family: 'Times New Roman', '宋体';
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Alibaba PuHuiTi";
 }
 .section p.lang-en, .section p.lang-cn {
   margin-bottom: 1em;
   text-indent: 2em;
-  font-size: 20px;
 }
 .section ul.lang-en, .section ul.lang-cn {
   margin-bottom: 1em;
-  font-size: 20px;
 }
 .section ul.lang-en li, .section ul.lang-cn li {
   margin-left: 3em;
   margin-bottom: 0.1em;
   text-indent: 1em;
-  font-size: 20px;
 }
 
 .section .lang-cn {
-  font-family: 'Times New Roman', '宋体';
+  font-family: 'Times New Roman', 'FangzhengShuSong';
 }
 
 .section.dark {

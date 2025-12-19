@@ -43,10 +43,10 @@ buttons.forEach(btn => {
 });
 
 function copyEmail() {
-    const email = "contact@example.com";
+    const email = "AquaBloom2025@outlook.com";
     navigator.clipboard.writeText(email).then(() => {
-        alert("邮箱已复制");
+        alert("Copy succeed. E-mail adderss: AquaBloom2025@outlook.com");
     }).catch(() => {
-        alert("复制失败，请手动复制");
+        alert("Copy failed. Please copy it manually. E-mail adderss: AquaBloom2025@outlook.com");
     });
 }
