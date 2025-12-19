@@ -7,20 +7,54 @@
 
 @font-face {
   font-family: "Alibaba PuHuiTi";
-  src: url("../assets/fonts/AlibabaPuHuiTi-3-115-Black.woff2") format("woff2");
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-45-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-55-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-65-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-75-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-85-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-95-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alibaba PuHuiTi";
+  src: url("../assets/fonts/AlibabaPuHuiTi/AlibabaPuHuiTi-3-115-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
-
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/en/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 @media (max-width: 768px) {
   .hero {
@@ -217,18 +251,26 @@ body {
   padding-top: 125px;
 }
 
-.section h2 {
+.section h2.lang-cn,
+.section h2.lang-en{
   font-size: 34px;
-  font-family: "Alibaba PuHuiTi", sans-serif;
+  font-family: "Alibaba PuHuiTi";
   font-weight: 900;
+  margin-bottom: 10px;
 }
 
-
-.section .lang-cn, .section .lang-cn * {
-  font-family: 'Times New Roman', '宋体';
-}
-.section .lang-en, .section .lang-en * {
+.section p.lang-en,
+.section ul.lang-en *,
+.section li.lang-en *{
+  font-size: 26px;
   font-family: 'Times New Roman';
+}
+
+.section p.lang-cn,
+.section ul.lang-cn *,
+.section li.lang-cn *{
+  font-size: 26px;
+  font-family: 'Times New Roman', '宋体';
 }
 .section p.lang-en, .section p.lang-cn {
   margin-bottom: 1em;
