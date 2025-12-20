@@ -64,14 +64,14 @@
 @font-face {
   font-family: "YanShiXiaXingKai";
   src: url("../assets/fonts/YanShiXiaXingKai.ttf") format("truetype");
-  font-weight: 400;
+  #font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FangzhengShuSong";
-  src: url("../assets/fonts/FangzhengShuSong_zh-cn.ttf") format("truetype");
-  font-weight: 400;
+  src: url("../assets/fonts/FangzhengShuSong_zh-cn.woff2") format("woff2");
+  #font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -189,7 +189,7 @@ body {
 }
 
 .lang-cn {
-  display: none;
+  #display: none;
 }
 
 .lang-switch button {
@@ -254,7 +254,7 @@ body {
 .subtitle.lang-cn *{
   font-weight: 400;
   font-size: 45px;
-  font-family: "楷体";
+  font-family: "YanShiXiaXingKai";
 }
 
 .hero-metrics span {
@@ -289,8 +289,8 @@ body {
 .section ul.lang-cn *,
 .section li.lang-cn *{
   font-size: 24px;
-  font-weight: 300;
-  font-family: "Alibaba PuHuiTi";
+  #font-weight: 400;
+  font-family: "FangzhengShuSong";
 }
 .section p.lang-en, .section p.lang-cn {
   margin-bottom: 1em;
