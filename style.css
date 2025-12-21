@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 @font-face {
@@ -61,20 +60,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "YanShiXiaXingKai";
-  src: url("../assets/fonts/YanShiXiaXingKai.ttf") format("truetype");
-  #font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FangzhengShuSong";
-  src: url("../assets/fonts/FangzhengShuSong_zh-cn.woff2") format("woff2");
-  #font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 @media (max-width: 768px) {
   .hero {
@@ -128,8 +113,9 @@ body {
 .navbar nav a {
   text-decoration: none;
   align-items: center;
+  text-align: center;
   color: #ccc;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .navbar nav a:hover {
@@ -149,7 +135,7 @@ body {
 .nav-item > a {
   text-decoration: none;
   color: #222;
-  padding: 8px 4px;
+  padding: 8px 8px;
 }
 
 .dropdown {
@@ -188,9 +174,6 @@ body {
   transform: translateY(0);
 }
 
-.lang-cn {
-  #display: none;
-}
 
 .lang-switch button {
   background: none;
@@ -264,6 +247,8 @@ body {
 }
 
 .section {
+  font-family: '方正书宋简体','宋体';
+  font-weight: 400;
   padding-left: 75px;
   padding-right: 75px;
   padding-bottom: 75px;
@@ -289,8 +274,6 @@ body {
 .section ul.lang-cn *,
 .section li.lang-cn *{
   font-size: 24px;
-  #font-weight: 400;
-  font-family: "FangzhengShuSong";
 }
 .section p.lang-en, .section p.lang-cn {
   margin-bottom: 1em;
@@ -306,7 +289,7 @@ body {
 }
 
 .section .lang-cn {
-  font-family: 'Times New Roman', 'FangzhengShuSong';
+  font-family: '方正书宋简体';
 }
 
 .section.dark {
@@ -339,14 +322,42 @@ body {
   margin-bottom: 10px;
 }
 
+.bt-nxtpg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 6px 0;
+  border: 1px solid #9ad1b3;
+  border-radius: 20px;
+  min-width: 120px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.bt-nxtpg:hover {
+  color: #9ad1b3;
+}
+
+
 .footer {
-  padding: 60px 15%;
+  padding: 30px 15%;
   background: #0b0d0f;
   text-align: center;
+}
+
+.lang-cn {
+  display: none;
 }
 
 .small {
   font-size: 12px;
   color: #777;
 }
+
+
 
