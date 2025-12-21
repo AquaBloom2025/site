@@ -175,7 +175,7 @@ body {
 }
 
 .lang-cn {
-  #display: none;
+  display: none;
 }
 
 .lang-switch button {
