@@ -342,6 +342,9 @@ body {
   font-size: 15px;
   text-decoration: none;
 }
+.bt-nxtpg.lang-cn{
+  display: none;
+}
 
 .bt-nxtpg:hover {
   color: #9ad1b3;

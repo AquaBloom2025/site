@@ -295,16 +295,16 @@ body {
   background-color: #0f1113;
 }
 .section.grey {
-  background-color: #9B9B9B;
+  background-color: #0f1113;
 }
 
 .section.texture {
   background: url('assets/section/section-soil.jpg') center/cover no-repeat;
 }
-
-.section img-logo{
-  width: 1000px;
-  display: flex;
+.section.img-logo{
+  display: block;
+  margin: 0 auto;
+  width: 750px;
   justify-content: center; /* 水平居中 */
   align-items: center;     /* 垂直居中 */
 }
