@@ -110,6 +110,10 @@ body {
   letter-spacing: 2px;
 }
 
+.lang-cn {
+  display: none;
+}
+
 .navbar nav a {
   text-decoration: none;
   align-items: center;
@@ -349,10 +353,6 @@ body {
   padding: 30px 15%;
   background: #0b0d0f;
   text-align: center;
-}
-
-.lang-cn {
-  display: none;
 }
 
 .small {

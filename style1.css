@@ -201,7 +201,7 @@ body {
 }
 
 .hero {
-  height: 175px;
+  height: 250px;
   background: url('assets/hero/hero-road-texture.png') center/cover no-repeat;
   display: flex;
   align-items: center;
