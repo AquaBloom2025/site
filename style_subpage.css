@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.hero {
+  margin-top: 62px;
+  height: 250px;
+  background: url('assets/hero/hero-road-texture.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: left;          /* 从居中改为左对齐 */
+}
+
+.hero h1 {
+  font-size: 400%;
+  font-family: "Palatino Linotype";
+}
+
+.section.grey {
+  background-color: #0f1113;
+}
+
+.img-logo {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+}
+
+
+

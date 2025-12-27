@@ -96,6 +96,7 @@ body {
   display: flex;
   align-items: center;   /* 让图片和文字在垂直方向居中对齐 */
   gap: 10px;             /* 图片和文字之间的间距，可按需调整 */
+  font-size: 25px;
 }
 
 .navbar .logo img {
@@ -119,7 +120,7 @@ body {
   align-items: center;
   text-align: center;
   color: #ccc;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .navbar nav a:hover {
@@ -152,7 +153,6 @@ body {
   list-style: none;
   padding: 8px 0;
   margin: 0;
-
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -185,6 +185,7 @@ body {
   color: #aaa;
   cursor: pointer;
   margin-left: 8px;
+  font-size: 18px;
 }
 
 .lang-switch button.active {
@@ -199,31 +200,6 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-}
-
-.hero {
-  height: min(100vh, 6000px);
-  background: url('assets/hero/hero-road-texture.png') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* 关键改动 */
-  padding-right: 10%;        /* 控制右侧留白 */
-}
-
-.hero-content {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  text-align: left;          /* 从居中改为左对齐 */
-}
-
-.hero h1 {
-  font-size: 700%;
-  margin-bottom: 16px;
-  font-family: "Palatino Linotype";
 }
 
 .subtitle {
@@ -251,12 +227,14 @@ body {
 }
 
 .section {
-  font-family: '方正书宋简体','宋体';
+  display: flow-root;
+  font-family: 'Times New Roman','方正书宋简体','宋体';
   font-weight: 400;
   padding-left: 75px;
   padding-right: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
   padding-top: 125px;
+  border-bottom: 2px solid rgba(158,158,158,1.00);
 }
 
 .section h2.lang-cn,
@@ -292,8 +270,26 @@ body {
   text-indent: 1em;
 }
 
+.section img{
+  display: block;
+  position: static; /* 或直接删掉 position */
+  margin: 40px auto;
+  width: 85%;
+  height: auto;
+  overflow: visible;
+}
+
+.section .img-logo{
+  display: block;
+  position: static;
+  margin: 40px auto;
+  width: 50%;
+  height: auto;
+  overflow: visible;
+}
+
 .section .lang-cn {
-  font-family: '方正书宋简体';
+  font-family: 'Times New Roman','方正书宋简体','宋体';
 }
 
 .section.dark {
@@ -349,8 +345,6 @@ body {
 .bt-nxtpg:hover {
   color: #9ad1b3;
 }
-
-
 
 .footer {
   padding: 30px 15%;
