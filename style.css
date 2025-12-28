@@ -274,9 +274,14 @@ body {
   display: block;
   position: static; /* 或直接删掉 position */
   margin: 40px auto;
-  width: 85%;
-  height: auto;
+  /*width: 85%;
+  height: auto;*/
   overflow: visible;
+}
+
+.section table *{
+  font-size: 20px;
+  line-height: 22px;
 }
 
 .section .img-logo{
