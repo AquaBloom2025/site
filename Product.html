@@ -78,12 +78,38 @@
 <p class="lang lang-cn">
   我们的创新产品是一套面向城市绿化场景的小型雨水再利用系统，其运行逻辑围绕环境变化自动切换为三种工作模式。当降雨发生时，装置展开伞状集水结构，将雨水高效汇集并沿伞面引导进入地下储水箱；降雨结束后，集水结构自动收回，避免遮挡绿化带的采光与通风，保持城市空间的整洁与开放。在无降雨的情况下，系统进入灌溉模式，利用储存的雨水通过喷头对土壤进行均匀浇灌。
 </p>
-<img src="assets/pic/Hardware structure.png" width=90% height=auto alt=""/>
+<img src="assets/pic/Hardware structure.png" style="width:min(90%,750px);height:auto" alt=""/>
 <p class="lang lang-en">
   The system is specifically scaled to fit within roadside green belts and other narrow urban spaces. Water is transferred through a simple, straight pipeline from storage to irrigation, minimizing transmission losses and improving overall efficiency. Through this straightforward yet responsive workflow, AquaBloom enables rainwater to be captured when available, stored discreetly, and reused precisely when needed, turning intermittent rainfall into a reliable resource for urban greenery.
 </p>
 <p class="lang lang-cn">
   整套设备的体量经过专门设计，可嵌入道路绿化带等狭窄空间中，不改变原有城市结构。雨水从储存到灌溉仅通过一条直线输水通道完成，结构简洁，有效降低输水过程中的损耗。通过这一清晰而高效的工作流程，系统实现了雨水的及时收集、隐蔽储存与按需利用，使原本短暂且易流失的降雨转化为稳定服务于城市绿化的水资源。
+</p>
+<img src="assets/pic/Software logic.png" style="width:min(90%,750px);height:auto" alt=""/>
+<p class="lang lang-en">
+  After the system starts, it enters an initialization stage where all sensors, as well as the pump and motor, are configured and prepared for operation. This ensures that both data acquisition and mechanical components are in a ready and stable state.
+</p>
+<p class="lang lang-cn">
+  系统启动后首先进入初始化阶段，对传感器以及水泵和电机进行配置与准备，确保各硬件模块处于可正常工作的状态。
+</p>
+</p>
+<p class="lang lang-en">
+The system then periodically reads data from multiple sensors, including air temperature and humidity (DHT11), soil moisture (SMS), and several water quality parameters such as turbidity, pH, and electrical conductivity. These measurements are used to assess environmental conditions and determine whether the collected water is suitable for use.
+</p>
+<p class="lang lang-cn">
+随后系统以一定周期读取多种传感器数据，包括空气温湿度（DHT11）、土壤湿度（SMS），以及水体的浊度、pH 值和电导率，用于综合判断环境状态和水质情况。
+</p>
+<p class="lang lang-en">
+Based on the sensed data, the control logic follows two main decision paths. The first checks whether it is raining; if rainfall is detected, the system opens the rainwater collector to capture and store rainwater. The second evaluates whether the surrounding environment is dry; when dry conditions are identified, the system activates the pump to perform irrigation as needed.
+</p>
+<p class="lang lang-cn">  
+在获取传感器数据后，系统进入决策阶段，控制逻辑主要分为两条判断路径。一方面判断是否正在下雨，若检测到降雨，则打开雨水收集器以收集雨水。另一方面，系统判断周围环境是否处于干燥状态。当环境偏干燥时，系统会根据设定条件开启水泵进行灌溉；当不需要灌溉或收集雨水时，则关闭水泵并关闭收集器。
+</p>
+<p class="lang lang-en">
+When neither rain collection nor irrigation is required, the system closes the collector and shuts down the pump. Through this closed-loop, condition-based control strategy, the system ensures that rainwater is collected when available, used only when necessary, and conserved when not needed, achieving efficient and water-saving operation.
+</p>
+<p class="lang lang-cn">
+整体流程体现了一种基于环境感知的闭环控制策略，实现了“该收的时候收、该用的时候用、不需要时关闭”的自动化雨水利用逻辑。
 </p>
   </section>
   
@@ -94,6 +120,10 @@
     <tr>
       <td>工作模式数量</td>
       <td>3 种（集雨 / 收拢 / 灌溉）</td>
+    </tr>
+    <tr>
+      <td>供电方式</td>
+      <td>2 种（12V电池 / 12V直流电源并入电网）</td>
     </tr>
     <tr>
       <td>集水结构展开响应时间</td>
@@ -145,6 +175,10 @@
     <tr>
       <td>Number of Operating Modes</td>
       <td>3 modes (Rain Collection / Retraction / Irrigation)</td>
+    </tr>
+    <tr>
+      <td>Power supply mode</td>
+      <td>2 types (12V battery / 12V DC power connected to the grid)</td>
     </tr>
     <tr>
       <td>Rain Collection Deployment Response Time</td>
