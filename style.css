@@ -279,17 +279,6 @@ body {
   overflow: visible;
 }
 
-.section .image-row {
-      display: flex;
-      gap: 12px; /* 图片之间的间距，可删 */
-}
-.section .image-row img {
-      width: 25%;
-      height: auto;
-      flex: 1; /* 三张图等分宽度 */
-      object-fit: cover; /* 防止图片变形 */
-    }
-
 .section table *{
   font-size: 20px;
   line-height: 22px;
