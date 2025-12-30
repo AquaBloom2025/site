@@ -8,7 +8,7 @@
 
 .hero {
   height: max(50vh, 550px);
-  background: url('assets/hero/hero-road-texture.png') center/cover no-repeat;
+  background: url('assets/hero/hero-road-texture.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* 关键改动 */
