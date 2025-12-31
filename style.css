@@ -277,11 +277,10 @@ body {
 }
 
 .section img{
-  display: inline-flex;
-  position: static;
+  display: flex;
+  position: static; 
+  align-items: center;
   margin: 40px auto;
-  /*width: 85%;
-  height: auto;*/
   overflow: visible;
 }
 
