@@ -277,8 +277,7 @@ body {
 }
 
 .section img{
-  display: flex;
-  position: static; 
+  display: inline-flex;
   align-items: center;
   margin: 40px auto;
   overflow: visible;
