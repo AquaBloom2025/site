@@ -124,7 +124,13 @@ When neither rain collection nor irrigation is required, the system closes the c
 <p class="lang lang-cn">
 整体流程体现了一种基于环境感知的闭环控制策略，实现了“该收的时候收、该用的时候用、不需要时关闭”的自动化雨水利用逻辑。
 </p>
-  </section>
+<img src="assets/pic/webctrl.png" width=auto height="800px" alt=""/>
+<p class="lang lang-en">
+We also have a control webpage, which can serves as a unified interface for AquaBloom device management and data visualization. From the homepage, users can view their profile, multiple registered devices, and each device’s real-time status, then enter a dedicated control panel with a single tap. The device page displays live sensor readings including temperature, humidity, soil moisture, pH, TDS, and turbidity, while allowing intuitive control of pumps and collectors. A styled line chart below visualizes collected water data, with quick toggles between yearly summaries and daily trends within a selected month, offering both long-term insight and detailed monitoring at a glance.
+</p>
+<p class="lang lang-cn">
+我们还有一个操作网页，其为AquaBloom提供统一的设备管理与数据可视化入口。用户可在主页查看个人账户、名下多台设备及其实时运行状态，并快速进入单台设备的控制界面。在设备页中，系统实时展示温湿度、土壤含水量、pH、TDS 与浊度等传感器数据，同时支持对水泵与集水器的直观开关控制。页面下方以美观的折线图呈现集水数据，用户可在年度总览与月度每日视图之间自由切换，直观理解系统的长期表现与短期变化。
+</p></section>
   
   <section id="Specification"  class="section dark">
     <h2 class="lang lang-en">Specification</h2>
@@ -152,15 +158,11 @@ When neither rain collection nor irrigation is required, the system closes the c
     </tr>
     <tr>
       <td>雨水初级过滤后浊度</td>
-      <td>≈ 0.5 NTU</td>
-    </tr>
-    <tr>
-      <td>模拟原始雨水浊度</td>
-      <td>≈ 5 NTU</td>
+      <td>≤ 4.0 NTU</td>
     </tr>
     <tr>
       <td>水质改善倍率</td>
-      <td>约 10 倍（浊度下降）</td>
+      <td>约 5 倍（浊度下降）</td>
     </tr>
     <tr>
       <td>连续喷洒稳定运行时间</td>
@@ -207,15 +209,7 @@ When neither rain collection nor irrigation is required, the system closes the c
     </tr>
     <tr>
       <td>Turbidity After Primary Filtration</td>
-      <td>≈ 0.5 NTU</td>
-    </tr>
-    <tr>
-      <td>Simulated Raw Rainwater Turbidity</td>
-      <td>≈ 5 NTU</td>
-    </tr>
-    <tr>
-      <td>Water Quality Improvement Ratio</td>
-      <td>~10× reduction in turbidity</td>
+      <td>≤ 4.0 NTU</td>
     </tr>
     <tr>
       <td>Continuous Spraying Stable Operation Time</td>
