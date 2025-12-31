@@ -94,15 +94,15 @@ body {
 .navbar .logo{
   margin: 0;
   display: flex;
-  align-items: center;   /* 让图片和文字在垂直方向居中对齐 */
-  gap: 10px;             /* 图片和文字之间的间距，可按需调整 */
+  align-items: center;
+  gap: 10px;
   font-size: 25px;
 }
 
 .navbar .logo img {
-  height: 6vh;      /* 或 40px，根据你的设计风格选 */
-  width: auto;       /* 保持比例，避免变形 */
-  display: block;    /* 去掉 img 的行内基线空隙 */
+  height: 6vh;
+  width: auto;
+  display: block;
 }
 
 .logo {
@@ -277,37 +277,34 @@ body {
 }
 
 .section img{
-  display: block;
-  position: static; /* 或直接删掉 position */
+  display: inline-flex;
+  position: static;
   margin: 40px auto;
   /*width: 85%;
   height: auto;*/
   overflow: visible;
 }
 
-.image-row {
+.row-3{
   display: flex;
-  gap: 12px;
+  flex-direction: row;
 }
-
-.image-row img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* 三图一排 */
 .row-3 img {
   flex: 1;
-  max-width: 33%;
-  max-width: 250px;
+  max-width: min(33%,400px);
 }
 
-/* 两图一排（你原来 50% + 30%，在视觉上其实不稳定） */
-.row-2 img {
+.row-2_1{
+  display: flex;
+  flex-direction: row;
+}
+.row-2_1 img {
+  max-width: min(33%,400px);
+}
+
+.row-2_2 img {
   flex: 1;
-  max-height: 45%;
-  max-width: 47%;
+  max-width: min(47%,700px);
 }
 
 .section table *{
