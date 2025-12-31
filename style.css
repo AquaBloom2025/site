@@ -277,7 +277,7 @@ body {
 }
 
 .section img{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin: 40px auto;
   overflow: visible;
@@ -293,7 +293,7 @@ body {
 }
 
 .row-2_1{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
 }
 .row-2_1 img {
@@ -301,6 +301,7 @@ body {
 }
 
 .row-2_2 img {
+  display: inline-flex;
   flex: 1;
   max-width: min(47%,700px);
 }
